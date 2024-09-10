@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Binary Bridge - IT Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Custom Gradient */
+      .gradient-bg {
+        background: linear-gradient(90deg, #3a3a59, #2b2b45);
+      }
+
+      /* Logo Styling */
+      img.logo {
+        height: 50px;
+      }
+
+      /* Button Hover Effect */
+      .btn-primary {
+        background-color: #2b2b45;
+        color: white;
+        border-radius: 50px;
+      }
+
+      .btn-primary:hover {
+        background-color: #3a3a59;
+      }
+
+      /* Footer Styling */
+      footer p {
+        font-size: 0.9rem;
+      }
+
+      /* Improved Service Card Hover */
+      .service-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 25px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+
+  <body class="font-sans bg-gray-100">
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+      <div
+        class="container mx-auto px-4 py-6 flex justify-between items-center"
+      >
+        <img class="logo" src="./logo.png" alt="Binary Bridge Logo" />
+        <nav class="hidden md:block">
+          <ul class="flex space-x-8">
+            <li>
+              <a
+                href="#"
+                class="text-gray-700 hover:text-indigo-600 transition duration-300"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#about"
+                class="text-gray-700 hover:text-indigo-600 transition duration-300"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="#services"
+                class="text-gray-700 hover:text-indigo-600 transition duration-300"
+                >Services</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <button
+          id="menuBtn"
+          class="md:hidden text-gray-600 hover:text-indigo-600"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+      <section class="gradient-bg text-white py-32">
+        <div class="container mx-auto px-4 text-center">
+          <h1 class="text-6xl font-extrabold mb-6">
+            Empower Your Business with Technology
+          </h1>
+          <p class="text-lg mb-8">
+            Discover innovative IT solutions tailored to your needs.
+          </p>
+          <a
+            href="#services"
+            class="btn-primary px-8 py-3 text-lg font-semibold inline-block transition duration-300"
+            >Our Services</a
+          >
+        </div>
+      </section>
+
+      <!-- About Us Section -->
+      <section id="about" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4 text-center">
+          <h2 class="text-4xl font-bold mb-12 text-gray-800">About Us</h2>
+          <p class="text-gray-700 max-w-2xl mx-auto mb-6">
+            At Binary Bridge, our mission is to bridge the gap between
+            businesses and cutting-edge technology. Since 2024, our team of IT
+            professionals has been delivering innovative solutions that foster
+            growth and efficiency.
+          </p>
+          <p class="text-gray-700 max-w-2xl mx-auto">
+            With over a decade of experience, we've partnered with hundreds of
+            businesses, helping them transform their IT infrastructure and
+            achieve their digital aspirations.
+          </p>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section id="services" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+          <h3 class="text-3xl font-bold text-center mb-12 text-gray-800">
+            Our Services
+          </h3>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Service Card 1 -->
+            <div
+              class="service-card bg-gray-50 p-8 rounded-lg shadow-md transition duration-300"
+            >
+              <img
+                src="./web-app.jpeg"
+                alt="Web Development"
+                class="w-full h-40 object-cover mb-6 rounded-md"
+              />
+              <h4 class="text-2xl font-bold mb-4 text-indigo-600">
+                Web Development
+              </h4>
+              <p class="text-gray-700">
+                Custom websites tailored to engage and convert your audience.
+              </p>
+            </div>
+            <!-- Service Card 2 -->
+            <div
+              class="service-card bg-gray-50 p-8 rounded-lg shadow-md transition duration-300"
+            >
+              <img
+                src="./mobile-app.jpeg"
+                alt="Cloud Solutions"
+                class="w-full h-40 object-cover mb-6 rounded-md"
+              />
+              <h4 class="text-2xl font-bold mb-4 text-indigo-600">
+                Cloud Solutions
+              </h4>
+              <p class="text-gray-700">
+                Scalable and secure cloud infrastructure to support your
+                business growth.
+              </p>
+            </div>
+            <!-- Service Card 3 -->
+            <div
+              class="service-card bg-gray-50 p-8 rounded-lg shadow-md transition duration-300"
+            >
+              <img
+                src="./consaltent.jpg"
+                alt="IT Consulting"
+                class="w-full h-40 object-cover mb-6 rounded-md"
+              />
+              <h4 class="text-2xl font-bold mb-4 text-indigo-600">
+                IT Consulting
+              </h4>
+              <p class="text-gray-700">
+                Expert advice to optimize your IT strategy and drive
+                transformation.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-10">
+      <div class="container mx-auto px-4 text-center">
+        <p>&copy; 2024 Binary Bridge. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
